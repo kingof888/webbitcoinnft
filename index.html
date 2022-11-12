@@ -471,6 +471,7 @@
 
  <!--Atteras ads-->
   <div class="row">
+	  <!--
 	  <script type="text/javascript" async>
 		atOptions = {
 			'key' : 'f15351166024c65c0a9bd06bf940a06c',
@@ -481,6 +482,24 @@
 		};
 		document.write('<scr' + 'ipt type="text/javascript" async src="http' + (location.protocol === 'https:' ? 's' : '') + '://coldknowing.com/f15351166024c65c0a9bd06bf940a06c/invoke.js"></scr' + 'ipt>');
 	</script>
+	  -->
+	  <script>
+		  const ad = document.getElementById('ad')
+const script = document.createElement('script')
+script.type = "text/javascript"
+	script.innerHTML = `
+	   	atOptions = {
+			'key' : 'f15351166024c65c0a9bd06bf940a06c',
+			'format' : 'iframe',
+			'height' : 50,
+			'width' : 320,
+			'params' : {}
+		};
+	document.write('<scr' + 'ipt type="text/javascript" async src="http' + (location.protocol === 'https:' ? 's' : '') + '://coldknowing.com/f15351166024c65c0a9bd06bf940a06c/invoke.js"></scr' + 'ipt>');
+	`
+
+	ad.appendChild(script)
+	  </script>
 	  
 </div>
  <!--Atteras ads end-->	
